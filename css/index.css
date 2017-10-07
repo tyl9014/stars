@@ -48,3 +48,26 @@ html {
 .show-showList li img {
   width: 20rem;
 }
+
+
+
+@media screen and (max-width:900px) and (min-width: 320px){
+ .banner1 {
+  background: url(Uploads/images/2017/07/18/1500391055_classify_img.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+
+  }
+
+ .banner2 {
+  background: url(Uploads/images/2017/07/18/1500368862_page_img.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+
+  }
+
+ .banner3 {
+  background: url(Uploads/images/2017/07/18/1500368898_img.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+
+  }
+}
+

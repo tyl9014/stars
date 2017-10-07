@@ -3,32 +3,111 @@
 <head>
 	<meta charset="UTF-8">
 	<title>星空犬舍首页</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-	<link rel="stylesheet" href="css/index.css" />
+	
+	<link href="css2/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_head.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/text_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/download_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_top2.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/goods_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/goods_details.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/news_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/order_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/order_pay.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_topup.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_page.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/recruit_details.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_myaddress.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_member_left.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_right.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_login.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/Index_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_top.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_changepwd.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/news_details.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_mydata.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/download_details.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/message_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/goods_search.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/member_register.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/recruit_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/cart_index.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_bottom.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/public_left.css" rel="stylesheet" type="text/css"/>
+	<link href="css2/css.css" rel="stylesheet" type="text/css">
+	<link href="css2/main.css" rel="stylesheet" type="text/css">
+	
+	<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/index.css" />-->
 </head>
 <body ng-app="myApp">
+	
 	<div ng-controller="appController">
-		<ul class="nav">
-			<li><a href="#indexView">首页</a></li>
+		<div class="head">
+			<a href="#" class="logo active"><img style="margin-left: 0px;" width="100" src="Uploads/images/2017/07/10/1499657857_sylogo.png"></a>
+			<ul>
+				<li>
+					<a href="#home" ng-class={'active':isActive('/home')}>首页<br><span>首页</span></a>
+				</li>
+				<li class="nav_num1">
+					<a href="#littleCat" ng-class={'active':isActive('/littleCat')}>幼犬幼猫欣赏<br><span>幼犬幼猫欣赏</span></a>
+				</li>
+				<li class="nav_num2">
+					<a href="#case" ng-class={'active':isActive('/case')}>案例<br><span>案例</span></a>
+				</li>
+				<li class="nav_num3">
+					<a>犬舍新闻<br><span>犬舍新闻</span></a>
+				</li>
+				<li class="nav_num4">
+					<a>种犬<br><span>种犬</span></a>
+				</li>
+				<li class="nav_num5">
+					<a>赛事介绍<br><span>赛事介绍</span></a>
+				</li>
+				<li class="nav_num6">
+					<a>联系<br><span>联系</span></a>
+				</li>
+			</ul>
+			<div class="hotline indexhotline">
+				<a href="tel:13810331380" style="line-height: 65px;display: inline-block;"><img src="static/images/telb.png" alt=""></a>
+				<a href="tel:13810331380"><span>13810331380</span></a>
+			</div>
+			<div class="xiangying_nav"></div>
+		</div>
+		
+		<!--<ul class="nav">
+			<li><a href="#home">首页</a></li>
 			<li><a href="#littleCat">幼猫幼犬欣赏</a></li>
 			<li><a href="#case">案例</a></li>
 			<li><a href="#news">犬舍新闻</a></li>
 			<li><a href="#dog">种犬</a></li>
 			<li><a href="#match">赛事介绍</a></li>
 			<li><a href="#contact">联系</a></li>
-		</ul>
-		<div class="oDiv" ng-view></div>
+		</ul>-->
+		
+		<div class="num_box" style="bottom: 0px;" ng-view></div>
 	</div>
 	
 	<script src="vendor/jquery-1.12.3.min.js"></script>
+	<script src="vendor/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="vendor/jquery.easing.min.js"></script>
 	
 	<script src="vendor/angular.min.js"></script>
 	<script src="vendor/angular-route.min.js"></script>
+	
+	<script src="script/banner-1.js"></script>
+	
+	<script src="js2/common.js"></script>
+	<script src="js2/laydate.js"></script>
+	<script src="js2/switch.js"></script>
+	<script src="js2/js.js"></script>
 	
 	<script src="js/app.js"></script>
 	<script src="js/appController.js"></script>
 	<script src="js/homeController.js"></script>
 	<script src="js/littleCatController.js"></script>
 	<script src="js/caseController.js"></script>
+	
 </body>
 </html>
